@@ -13,7 +13,7 @@ public class CallAppService {
 
     private String url = "https://qrcodegenbot.onrender.com/3d7b43e3-8b70-4ee2-ac11-f3e33de19417";
 
-    @Scheduled(fixedRate = 10000)
+    @Scheduled(fixedRate = 50000)
     public void callExternalApp() {
         try {
             String response = restTemplate.getForObject(url, String.class);
